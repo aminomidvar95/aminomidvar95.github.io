@@ -1,0 +1,810 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amin Omidvar | English & IELTS Teacher</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --navy: #0D1B2A;
+            --yellow: #FDCB2A;
+            --mint: #2ECC71;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        h1, h2, h3, h4 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+        }
+        
+        .tech-font {
+            font-family: 'Orbitron', sans-serif;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(13,27,42,0.95) 0%, rgba(45,62,80,0.9) 100%);
+        }
+        
+        .btn-primary {
+            background-color: var(--yellow);
+            color: var(--navy);
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(253, 203, 42, 0.3);
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .testimonial-card {
+            transition: all 0.3s ease;
+        }
+        
+        .testimonial-card:hover {
+            transform: scale(1.03);
+        }
+        
+        .blog-card:hover .blog-title {
+            color: var(--yellow);
+        }
+        
+        .farsi {
+            direction: rtl;
+            font-family: 'Vazir', sans-serif;
+        }
+        
+        @media (max-width: 768px) {
+            .hero-content {
+                flex-direction: column;
+            }
+            
+            .hero-text {
+                padding-top: 2rem;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                    <div class="w-12 h-12 rounded-full bg-yellow-400 flex items-center justify-center mr-3">
+                        <span class="tech-font text-xl font-bold text-gray-800">AO</span>
+                    </div>
+                    <span class="tech-font text-gray-800 text-xl font-bold">Amin Omidvar</span>
+                </div>
+                
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-gray-800 hover:text-yellow-500 font-medium">Home</a>
+                    <a href="#about" class="text-gray-800 hover:text-yellow-500 font-medium">About</a>
+                    <a href="#services" class="text-gray-800 hover:text-yellow-500 font-medium">Services</a>
+                    <a href="#blog" class="text-gray-800 hover:text-yellow-500 font-medium">Blog</a>
+                    <a href="#testimonials" class="text-gray-800 hover:text-yellow-500 font-medium">Testimonials</a>
+                    <a href="#contact" class="text-gray-800 hover:text-yellow-500 font-medium">Contact</a>
+                </div>
+                
+                <div class="md:hidden">
+                    <button class="mobile-menu-button">
+                        <svg class="w-6 h-6 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile menu -->
+        <div class="mobile-menu hidden md:hidden bg-white py-4 px-6 shadow-lg">
+            <a href="#home" class="block py-2 text-gray-800 hover:text-yellow-500">Home</a>
+            <a href="#about" class="block py-2 text-gray-800 hover:text-yellow-500">About</a>
+            <a href="#services" class="block py-2 text-gray-800 hover:text-yellow-500">Services</a>
+            <a href="#blog" class="block py-2 text-gray-800 hover:text-yellow-500">Blog</a>
+            <a href="#testimonials" class="block py-2 text-gray-800 hover:text-yellow-500">Testimonials</a>
+            <a href="#contact" class="block py-2 text-gray-800 hover:text-yellow-500">Contact</a>
+            <a href="#book" class="block mt-4 py-2 px-4 bg-yellow-400 text-gray-800 font-medium rounded-md text-center">Book a Class</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-gradient text-white py-20">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row hero-content">
+            <div class="md:w-1/2 hero-text">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Language is not just vocabulary – <span class="text-yellow-400">it's a bridge to your future.</span></h1>
+                <p class="text-xl mb-8">Hi, I'm Amin Omidvar, an English & IELTS teacher helping students in Tehran unlock their potential through language mastery.</p>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="#book" class="btn-primary py-3 px-8 rounded-md font-bold text-lg text-center">Book a Class</a>
+                    <a href="#services" class="bg-transparent border-2 border-white py-3 px-8 rounded-md font-bold text-lg text-center hover:bg-white hover:text-gray-800 transition">Learn More</a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center mt-10 md:mt-0">
+                <div class="relative w-64 h-64 md:w-80 md:h-80">
+                    <div class="absolute inset-0 bg-yellow-400 rounded-full opacity-20 transform -rotate-6"></div>
+                    <div class="absolute inset-0 bg-mint-500 rounded-full opacity-20 transform rotate-6"></div>
+                    <img src="https://images.unsplash.com/photo-1580894732444-8ecded7900cd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Amin Omidvar" class="relative rounded-full w-full h-full object-cover border-4 border-white shadow-xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">About Me</h2>
+                <div class="w-20 h-1 bg-yellow-400 mx-auto"></div>
+            </div>
+            
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/3 mb-10 md:mb-0 flex justify-center">
+                    <img src="https://images.unsplash.com/photo-1544717305-2782549b5136?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Teaching" class="rounded-lg shadow-xl w-full max-w-md">
+                </div>
+                <div class="md:w-2/3 md:pl-12">
+                    <h3 class="text-2xl font-bold mb-6">My Journey in Education</h3>
+                    <p class="mb-6 text-gray-700">With over 8 years of experience in English language education, I've dedicated my career to helping students achieve their academic and professional goals through language mastery. My approach combines traditional teaching methods with innovative educational technologies.</p>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                        <div class="flex items-start">
+                            <div class="bg-yellow-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-graduation-cap text-yellow-500"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-1">Education</h4>
+                                <p class="text-gray-600">MA in TESOL, University of Tehran</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-certificate text-blue-500"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-1">Certifications</h4>
+                                <p class="text-gray-600">CELTA, IELTS Examiner Certification</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-green-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-chalkboard-teacher text-green-500"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-1">Experience</h4>
+                                <p class="text-gray-600">500+ students taught, 8+ years experience</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-purple-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-star text-purple-500"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-1">Specialization</h4>
+                                <p class="text-gray-600">IELTS Preparation, Academic English</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#" class="bg-gray-800 text-white py-2 px-6 rounded-md font-medium hover:bg-gray-700 transition">Download CV</a>
+                        <a href="#services" class="border-2 border-gray-800 text-gray-800 py-2 px-6 rounded-md font-medium hover:bg-gray-100 transition">My Services</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Courses & Services</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">Tailored programs designed to meet your specific language learning goals</p>
+                <div class="w-20 h-1 bg-yellow-400 mx-auto mt-4"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden service-card transition duration-500">
+                    <div class="h-48 bg-blue-600 flex items-center justify-center">
+                        <i class="fas fa-passport text-white text-6xl"></i>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-xl font-bold mb-3">Road to IELTS</h3>
+                        <p class="text-gray-600 mb-4">Comprehensive preparation course covering all four IELTS test components with personalized feedback and strategy sessions.</p>
+                        <ul class="mb-6 space-y-2">
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                                <span>Full test practice with detailed feedback</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                                <span>Speaking & Writing evaluation</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                                <span>Score improvement guarantee</span>
+                            </li>
+                        </ul>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-lg">From $120/month</span>
+                            <a href="#book" class="text-blue-600 font-medium hover:underline">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden service-card transition duration-500">
+                    <div class="h-48 bg-green-600 flex items-center justify-center">
+                        <i class="fas fa-language text-white text-6xl"></i>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-xl font-bold mb-3">General English</h3>
+                        <p class="text-gray-600 mb-4">Build fluency and confidence in everyday English communication through interactive lessons and real-world practice.</p>
+                        <ul class="mb-6 space-y-2">
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                                <span>Conversation practice</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                                <span>Grammar & vocabulary building</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                                <span>Pronunciation coaching</span>
+                            </li>
+                        </ul>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-lg">From $80/month</span>
+                            <a href="#book" class="text-blue-600 font-medium hover:underline">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden service-card transition duration-500">
+                    <div class="h-48 bg-purple-600 flex items-center justify-center">
+                        <i class="fas fa-robot text-white text-6xl"></i>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-xl font-bold mb-3">AI in Education</h3>
+                        <p class="text-gray-600 mb-4">Workshops and coaching on leveraging AI tools to enhance language learning and academic performance.</p>
+                        <ul class="mb-6 space-y-2">
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                                <span>AI writing assistants</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                                <span>Personalized learning algorithms</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                                <span>Future of education technology</span>
+                            </li>
+                        </ul>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-lg">From $60/session</span>
+                            <a href="#book" class="text-blue-600 font-medium hover:underline">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-16 text-center">
+                <a href="#book" class="inline-block bg-yellow-400 text-gray-800 py-3 px-8 rounded-md font-bold text-lg hover:bg-yellow-500 transition">View All Programs</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Learning Resources</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">Articles, tips and insights to support your language journey</p>
+                <div class="w-20 h-1 bg-yellow-400 mx-auto mt-4"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Blog Post 1 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300 blog-card">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1501504905252-473c47e087f8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="IELTS Tips" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded">IELTS</span>
+                            <span class="text-gray-500 text-sm ml-3">May 15, 2023</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 blog-title">5 Common IELTS Writing Mistakes and How to Avoid Them</h3>
+                        <p class="text-gray-600 mb-4">Many students lose points unnecessarily on the IELTS writing test. Learn about the most frequent errors and strategies to overcome them.</p>
+                        <a href="#" class="text-blue-600 font-medium hover:underline">Read More →</a>
+                    </div>
+                </div>
+                
+                <!-- Blog Post 2 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300 blog-card">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="AI in Education" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <span class="bg-purple-100 text-purple-800 text-xs font-medium px-2.5 py-0.5 rounded">Technology</span>
+                            <span class="text-gray-500 text-sm ml-3">June 2, 2023</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 blog-title">How AI Language Tools Can Accelerate Your Learning</h3>
+                        <p class="text-gray-600 mb-4">Discover the best AI-powered tools for language learners and how to integrate them effectively into your study routine without losing the human touch.</p>
+                        <a href="#" class="text-blue-600 font-medium hover:underline">Read More →</a>
+                    </div>
+                </div>
+                
+                <!-- Blog Post 3 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300 blog-card">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Study Tips" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded">Study Tips</span>
+                            <span class="text-gray-500 text-sm ml-3">June 20, 2023</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 blog-title">Creating an Effective English Study Routine That Works</h3>
+                        <p class="text-gray-600 mb-4">Learn how to design a personalized study schedule that fits your lifestyle and maximizes your language acquisition through scientifically proven methods.</p>
+                        <a href="#" class="text-blue-600 font-medium hover:underline">Read More →</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-16 text-center">
+                <a href="#" class="inline-block border-2 border-gray-800 text-gray-800 py-3 px-8 rounded-md font-bold text-lg hover:bg-gray-800 hover:text-white transition">View All Articles</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Student Success Stories</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">What my students say about their learning experience</p>
+                <div class="w-20 h-1 bg-yellow-400 mx-auto mt-4"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-8 rounded-lg shadow-md testimonial-card">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 rounded-full overflow-hidden mr-4">
+                            <img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Student" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Nima Rahimi</h4>
+                            <p class="text-gray-500">IELTS Student</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-6">"Thanks to Amin's targeted IELTS preparation, I improved my overall band score from 6.0 to 7.5 in just 3 months. His writing feedback was especially valuable, helping me understand exactly what examiners look for."</p>
+                    <div class="flex">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-8 rounded-lg shadow-md testimonial-card">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 rounded-full overflow-hidden mr-4">
+                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5cd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Student" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Sara Mohammadi</h4>
+                            <p class="text-gray-500">General English Student</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-6">"I was always afraid to speak English, but Amin created such a supportive environment. Now I can confidently communicate with international colleagues. His teaching style makes complex grammar easy to understand."</p>
+                    <div class="flex">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="bg-white p-8 rounded-lg shadow-md testimonial-card">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 rounded-full overflow-hidden mr-4">
+                            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Student" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Amir Hosseini</h4>
+                            <p class="text-gray-500">University Student</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-6">"The AI tools Amin introduced revolutionized how I study. I went from struggling with academic papers to writing confidently in English. His blend of traditional teaching and tech integration is truly innovative."</p>
+                    <div class="flex">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="book" class="py-20 bg-blue-600 text-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to Start Your English Journey?</h2>
+                    <p class="text-xl opacity-90 max-w-2xl mx-auto">Book your first class today and take the first step towards language mastery</p>
+                    <div class="w-20 h-1 bg-yellow-400 mx-auto mt-4"></div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-xl overflow-hidden">
+                    <div class="md:flex">
+                        <div class="md:w-1/2 bg-blue-700 p-8">
+                            <h3 class="text-2xl font-bold mb-6">Class Options</h3>
+                            
+                            <div class="space-y-6">
+                                <div class="flex items-start">
+                                    <div class="bg-blue-600 p-2 rounded-full mr-4 mt-1">
+                                        <i class="fas fa-calendar-check text-white"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold mb-1">Trial Session</h4>
+                                        <p class="text-blue-100">30-minute introductory class to assess your level and discuss goals</p>
+                                        <p class="font-bold mt-2">Free</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start">
+                                    <div class="bg-blue-600 p-2 rounded-full mr-4 mt-1">
+                                        <i class="fas fa-user-graduate text-white"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold mb-1">Individual Class</h4>
+                                        <p class="text-blue-100">60-minute personalized lesson focused on your specific needs</p>
+                                        <p class="font-bold mt-2">$25/session</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start">
+                                    <div class="bg-blue-600 p-2 rounded-full mr-4 mt-1">
+                                        <i class="fas fa-users text-white"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold mb-1">Group Class</h4>
+                                        <p class="text-blue-100">90-minute session with 3-5 students at similar levels</p>
+                                        <p class="font-bold mt-2">$15/session</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start">
+                                    <div class="bg-blue-600 p-2 rounded-full mr-4 mt-1">
+                                        <i class="fas fa-road text-white"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold mb-1">IELTS Package</h4>
+                                        <p class="text-blue-100">8-week intensive preparation course with mock tests</p>
+                                        <p class="font-bold mt-2">$300</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="md:w-1/2 p-8 text-gray-800">
+                            <h3 class="text-2xl font-bold mb-6">Schedule Your Class</h3>
+                            <form id="bookingForm">
+                                <div class="mb-4">
+                                    <label for="name" class="block text-gray-700 font-medium mb-2">Full Name</label>
+                                    <input type="text" id="name" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                                </div>
+                                
+                                <div class="mb-4">
+                                    <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
+                                    <input type="email" id="email" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                                </div>
+                                
+                                <div class="mb-4">
+                                    <label for="phone" class="block text-gray-700 font-medium mb-2">Phone Number</label>
+                                    <input type="tel" id="phone" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                                </div>
+                                
+                                <div class="mb-4">
+                                    <label for="service" class="block text-gray-700 font-medium mb-2">Service</label>
+                                    <select id="service" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                                        <option value="">Select a service</option>
+                                        <option value="trial">Trial Session (Free)</option>
+                                        <option value="individual">Individual Class ($25)</option>
+                                        <option value="group">Group Class ($15)</option>
+                                        <option value="ielts">IELTS Package ($300)</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="mb-6">
+                                    <label for="message" class="block text-gray-700 font-medium mb-2">Your Goals</label>
+                                    <textarea id="message" rows="3" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="What do you hope to achieve?"></textarea>
+                                </div>
+                                
+                                <button type="submit" class="w-full bg-blue-600 text-white py-3 px-4 rounded-md font-bold hover:bg-blue-700 transition">Submit Booking Request</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Get In Touch</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">Have questions? Want to discuss your learning needs? Reach out anytime.</p>
+                <div class="w-20 h-1 bg-yellow-400 mx-auto mt-4"></div>
+            </div>
+            
+            <div class="max-w-6xl mx-auto">
+                <div class="flex flex-col md:flex-row">
+                    <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10">
+                        <h3 class="text-2xl font-bold mb-6">Contact Information</h3>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-map-marker-alt text-blue-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1">Location</h4>
+                                    <p class="text-gray-600">Tehran, Iran</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-green-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-envelope text-green-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1">Email</h4>
+                                    <p class="text-gray-600">amin.omidvar@example.com</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-purple-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-phone-alt text-purple-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1">Phone</h4>
+                                    <p class="text-gray-600">+98 912 345 6789</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-red-100 p-3 rounded-full mr-4">
+                                    <i class="fab fa-youtube text-red-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1">YouTube Channel</h4>
+                                    <a href="https://www.youtube.com/@AI_Time_show" target="_blank" class="text-gray-600 hover:underline">AI Time Show</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <h3 class="text-2xl font-bold mt-10 mb-6">Teaching Hours</h3>
+                        <div class="bg-gray-50 p-6 rounded-lg">
+                            <div class="space-y-3">
+                                <div class="flex justify-between">
+                                    <span class="font-medium">Sunday - Thursday</span>
+                                    <span>9:00 AM - 8:00 PM</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="font-medium">Friday</span>
+                                    <span>10:00 AM - 4:00 PM</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="font-medium">Saturday</span>
+                                    <span>Closed</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="md:w-1/2">
+                        <h3 class="text-2xl font-bold mb-6">Send a Message</h3>
+                        <form id="contactForm" class="space-y-4">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div>
+                                    <label for="contactName" class="block text-gray-700 font-medium mb-1">Name</label>
+                                    <input type="text" id="contactName" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                                </div>
+                                <div>
+                                    <label for="contactEmail" class="block text-gray-700 font-medium mb-1">Email</label>
+                                    <input type="email" id="contactEmail" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <label for="contactSubject" class="block text-gray-700 font-medium mb-1">Subject</label>
+                                <input type="text" id="contactSubject" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                            </div>
+                            
+                            <div>
+                                <label for="contactMessage" class="block text-gray-700 font-medium mb-1">Message</label>
+                                <textarea id="contactMessage" rows="4" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="w-full bg-blue-600 text-white py-3 px-4 rounded-md font-bold hover:bg-blue-700 transition">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between">
+                <div class="mb-8 md:mb-0">
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 rounded-full bg-yellow-400 flex items-center justify-center mr-3">
+                            <span class="tech-font text-gray-800 font-bold">AO</span>
+                        </div>
+                        <span class="tech-font text-xl font-bold">Amin Omidvar</span>
+                    </div>
+                    <p class="max-w-xs text-gray-400">Helping students in Tehran achieve their language goals through innovative teaching methods.</p>
+                </div>
+                
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
+                    <div>
+                        <h4 class="text-lg font-bold mb-4">Quick Links</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#home" class="text-gray-400 hover:text-white transition">Home</a></li>
+                            <li><a href="#about" class="text-gray-400 hover:text-white transition">About</a></li>
+                            <li><a href="#services" class="text-gray-400 hover:text-white transition">Services</a></li>
+                            <li><a href="#blog" class="text-gray-400 hover:text-white transition">Blog</a></li>
+                            <li><a href="#contact" class="text-gray-400 hover:text-white transition">Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h4 class="text-lg font-bold mb-4">Services</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-gray-400 hover:text-white transition">IELTS Preparation</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition">General English</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition">Academic Writing</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition">AI Workshops</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition">Corporate Training</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h4 class="text-lg font-bold mb-4">Connect</h4>
+                        <div class="flex space-x-4 mb-4">
+                            <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-blue-600 transition">
+                                <i class="fab fa-telegram"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-blue-400 transition">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="https://www.youtube.com/@AI_Time_show" target="_blank" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-red-600 transition">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-blue-800 transition">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                        <p class="text-gray-400">amin.omidvar@example.com</p>
+                        <p class="text-gray-400">+98 912 345 6789</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 mb-4 md:mb-0">© 2023 Amin Omidvar. All rights reserved.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white transition">Privacy Policy</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="fixed bottom-8 right-8 w-12 h-12 bg-blue-600 text-white rounded-full shadow-lg flex items-center justify-center opacity-0 invisible transition-all duration-300">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.querySelector('.mobile-menu-button');
+        const mobileMenu = document.querySelector('.mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Form submission
+        const bookingForm = document.getElementById('bookingForm');
+        const contactForm = document.getElementById('contactForm');
+        
+        bookingForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Thank you for your booking request! I will contact you shortly to confirm your class.');
+            bookingForm.reset();
+        });
+        
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Thank you for your message! I will get back to you as soon as possible.');
+            contactForm.reset();
+        });
+        
+        // Back to top button
+        const backToTopButton = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.remove('opacity-0', 'invisible');
+                backToTopButton.classList.add('opacity-100', 'visible');
+            } else {
+                backToTopButton.classList.remove('opacity-100', 'visible');
+                backToTopButton.classList.add('opacity-0', 'invisible');
+            }
+        });
+        
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+        
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
